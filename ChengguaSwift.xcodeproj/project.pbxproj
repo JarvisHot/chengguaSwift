@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33CA78FF31B17E5A2EC186DF /* Pods_ChengguaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67981C6F5710A9DFB33FF30D /* Pods_ChengguaSwift.framework */; };
+		6342E8CF1DED537F00562F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8CE1DED537F00562F4A /* AppDelegate.swift */; };
+		6342E8D11DED537F00562F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8D01DED537F00562F4A /* ViewController.swift */; };
+		6342E8D41DED537F00562F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8D21DED537F00562F4A /* Main.storyboard */; };
+		6342E8D61DED537F00562F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8D51DED537F00562F4A /* Assets.xcassets */; };
+		6342E8D91DED537F00562F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8D71DED537F00562F4A /* LaunchScreen.storyboard */; };
+		6342E8E51DED555000562F4A /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8E41DED555000562F4A /* tabController.swift */; };
+		6342E8E81DED5AAC00562F4A /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8E61DED5AAC00562F4A /* ViewControllerOne.swift */; };
+		6342E8E91DED5AAC00562F4A /* ViewControllerOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8E71DED5AAC00562F4A /* ViewControllerOne.xib */; };
+		6342E8EC1DED5ABD00562F4A /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8EA1DED5ABD00562F4A /* ViewControllerTwo.swift */; };
+		6342E8ED1DED5ABD00562F4A /* ViewControllerTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8EB1DED5ABD00562F4A /* ViewControllerTwo.xib */; };
+		6342E8F01DED5ACC00562F4A /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8EE1DED5ACC00562F4A /* ViewControllerThree.swift */; };
+		6342E8F11DED5ACC00562F4A /* ViewControllerThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8EF1DED5ACC00562F4A /* ViewControllerThree.xib */; };
+		6342E8F41DED5AD900562F4A /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8F21DED5AD900562F4A /* ViewControllerFour.swift */; };
+		6342E8F51DED5AD900562F4A /* ViewControllerFour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6342E8F31DED5AD900562F4A /* ViewControllerFour.xib */; };
+		6342E8F81DED75E800562F4A /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342E8F71DED75E800562F4A /* Define.swift */; };
+		636281891DEEBD8E000C3C70 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636281881DEEBD8E000C3C70 /* TopicModel.swift */; };
+		63F2E3141DF553CC005DB51A /* ChenggguaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2E3121DF553CC005DB51A /* ChenggguaCell.swift */; };
+		63F2E3151DF553CC005DB51A /* ChenggguaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F2E3131DF553CC005DB51A /* ChenggguaCell.xib */; };
+		63F2E3171DF65B76005DB51A /* 冬青黑体W3.otf in Sources */ = {isa = PBXBuildFile; fileRef = 63F2E3161DF659CC005DB51A /* 冬青黑体W3.otf */; };
+		63F2E3191DF6B347005DB51A /* myNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2E3181DF6B347005DB51A /* myNav.swift */; };
+		63F2E31B1DF6C017005DB51A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2E31A1DF6C017005DB51A /* Photos.framework */; };
+		63F2E31D1DF6C01E005DB51A /* MWPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F2E31C1DF6C01E005DB51A /* MWPhotoBrowser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E097CE185BC3408C5350F74 /* Pods-ChengguaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChengguaSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChengguaSwift/Pods-ChengguaSwift.release.xcconfig"; sourceTree = "<group>"; };
+		474594FADDE32029E44C99AB /* Pods-ChengguaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChengguaSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChengguaSwift/Pods-ChengguaSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		6342E8CB1DED537F00562F4A /* ChengguaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChengguaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6342E8CE1DED537F00562F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6342E8D01DED537F00562F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6342E8D31DED537F00562F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6342E8D51DED537F00562F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6342E8D81DED537F00562F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6342E8DA1DED537F00562F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6342E8E41DED555000562F4A /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
+		6342E8E61DED5AAC00562F4A /* ViewControllerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
+		6342E8E71DED5AAC00562F4A /* ViewControllerOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerOne.xib; sourceTree = "<group>"; };
+		6342E8EA1DED5ABD00562F4A /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		6342E8EB1DED5ABD00562F4A /* ViewControllerTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerTwo.xib; sourceTree = "<group>"; };
+		6342E8EE1DED5ACC00562F4A /* ViewControllerThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
+		6342E8EF1DED5ACC00562F4A /* ViewControllerThree.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerThree.xib; sourceTree = "<group>"; };
+		6342E8F21DED5AD900562F4A /* ViewControllerFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
+		6342E8F31DED5AD900562F4A /* ViewControllerFour.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerFour.xib; sourceTree = "<group>"; };
+		6342E8F71DED75E800562F4A /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		636281841DEEB49A000C3C70 /* ChengguaSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChengguaSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		636281881DEEBD8E000C3C70 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		63F2E3121DF553CC005DB51A /* ChenggguaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenggguaCell.swift; sourceTree = "<group>"; };
+		63F2E3131DF553CC005DB51A /* ChenggguaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChenggguaCell.xib; sourceTree = "<group>"; };
+		63F2E3161DF659CC005DB51A /* 冬青黑体W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "冬青黑体W3.otf"; sourceTree = "<group>"; };
+		63F2E3181DF6B347005DB51A /* myNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myNav.swift; sourceTree = "<group>"; };
+		63F2E31A1DF6C017005DB51A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		63F2E31C1DF6C01E005DB51A /* MWPhotoBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWPhotoBrowser.framework; path = "../../Library/Developer/Xcode/DerivedData/ChengguaSwift-fyoicwqasgezqcgkjhudmazeugub/Build/Products/Debug-iphonesimulator/MWPhotoBrowser/MWPhotoBrowser.framework"; sourceTree = "<group>"; };
+		67981C6F5710A9DFB33FF30D /* Pods_ChengguaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChengguaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6342E8C81DED537F00562F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F2E31D1DF6C01E005DB51A /* MWPhotoBrowser.framework in Frameworks */,
+				63F2E31B1DF6C017005DB51A /* Photos.framework in Frameworks */,
+				33CA78FF31B17E5A2EC186DF /* Pods_ChengguaSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A5C877A9441330FEC9F16D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F2E31C1DF6C01E005DB51A /* MWPhotoBrowser.framework */,
+				63F2E31A1DF6C017005DB51A /* Photos.framework */,
+				67981C6F5710A9DFB33FF30D /* Pods_ChengguaSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6342E8C21DED537F00562F4A = {
+			isa = PBXGroup;
+			children = (
+				6342E8CD1DED537F00562F4A /* ChengguaSwift */,
+				6342E8CC1DED537F00562F4A /* Products */,
+				85461C20934ECE8A98F122B1 /* Pods */,
+				3A5C877A9441330FEC9F16D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6342E8CC1DED537F00562F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6342E8CB1DED537F00562F4A /* ChengguaSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6342E8CD1DED537F00562F4A /* ChengguaSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6342E8F61DED75D300562F4A /* tools */,
+				6342E8CE1DED537F00562F4A /* AppDelegate.swift */,
+				6342E8E41DED555000562F4A /* tabController.swift */,
+				63F2E3181DF6B347005DB51A /* myNav.swift */,
+				6342E8D01DED537F00562F4A /* ViewController.swift */,
+				6342E8E61DED5AAC00562F4A /* ViewControllerOne.swift */,
+				6342E8E71DED5AAC00562F4A /* ViewControllerOne.xib */,
+				63F2E3111DF553AE005DB51A /* cell */,
+				6342E8EA1DED5ABD00562F4A /* ViewControllerTwo.swift */,
+				6342E8EB1DED5ABD00562F4A /* ViewControllerTwo.xib */,
+				6342E8EE1DED5ACC00562F4A /* ViewControllerThree.swift */,
+				6342E8EF1DED5ACC00562F4A /* ViewControllerThree.xib */,
+				6342E8F21DED5AD900562F4A /* ViewControllerFour.swift */,
+				6342E8F31DED5AD900562F4A /* ViewControllerFour.xib */,
+				6342E8D21DED537F00562F4A /* Main.storyboard */,
+				6342E8D51DED537F00562F4A /* Assets.xcassets */,
+				6342E8D71DED537F00562F4A /* LaunchScreen.storyboard */,
+				6342E8DA1DED537F00562F4A /* Info.plist */,
+				636281841DEEB49A000C3C70 /* ChengguaSwift-Bridging-Header.h */,
+				63F2E3161DF659CC005DB51A /* 冬青黑体W3.otf */,
+			);
+			path = ChengguaSwift;
+			sourceTree = "<group>";
+		};
+		6342E8F61DED75D300562F4A /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				6342E8F71DED75E800562F4A /* Define.swift */,
+				636281881DEEBD8E000C3C70 /* TopicModel.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		63F2E3111DF553AE005DB51A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				63F2E3121DF553CC005DB51A /* ChenggguaCell.swift */,
+				63F2E3131DF553CC005DB51A /* ChenggguaCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		85461C20934ECE8A98F122B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				474594FADDE32029E44C99AB /* Pods-ChengguaSwift.debug.xcconfig */,
+				3E097CE185BC3408C5350F74 /* Pods-ChengguaSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6342E8CA1DED537F00562F4A /* ChengguaSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6342E8DD1DED537F00562F4A /* Build configuration list for PBXNativeTarget "ChengguaSwift" */;
+			buildPhases = (
+				8833192C6DDDE96CBA934EFC /* [CP] Check Pods Manifest.lock */,
+				6342E8C71DED537F00562F4A /* Sources */,
+				6342E8C81DED537F00562F4A /* Frameworks */,
+				6342E8C91DED537F00562F4A /* Resources */,
+				DAF34ADDF3D2D9F90DF5405A /* [CP] Embed Pods Frameworks */,
+				A08F4774D853578BB671A730 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChengguaSwift;
+			productName = ChengguaSwift;
+			productReference = 6342E8CB1DED537F00562F4A /* ChengguaSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6342E8C31DED537F00562F4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "jarvis jiangjjw";
+				TargetAttributes = {
+					6342E8CA1DED537F00562F4A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53MXMBD5Y9;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6342E8C61DED537F00562F4A /* Build configuration list for PBXProject "ChengguaSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6342E8C21DED537F00562F4A;
+			productRefGroup = 6342E8CC1DED537F00562F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6342E8CA1DED537F00562F4A /* ChengguaSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6342E8C91DED537F00562F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6342E8D91DED537F00562F4A /* LaunchScreen.storyboard in Resources */,
+				6342E8D61DED537F00562F4A /* Assets.xcassets in Resources */,
+				6342E8D41DED537F00562F4A /* Main.storyboard in Resources */,
+				63F2E3151DF553CC005DB51A /* ChenggguaCell.xib in Resources */,
+				6342E8ED1DED5ABD00562F4A /* ViewControllerTwo.xib in Resources */,
+				6342E8E91DED5AAC00562F4A /* ViewControllerOne.xib in Resources */,
+				6342E8F51DED5AD900562F4A /* ViewControllerFour.xib in Resources */,
+				6342E8F11DED5ACC00562F4A /* ViewControllerThree.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8833192C6DDDE96CBA934EFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A08F4774D853578BB671A730 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChengguaSwift/Pods-ChengguaSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF34ADDF3D2D9F90DF5405A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChengguaSwift/Pods-ChengguaSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6342E8C71DED537F00562F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F2E3171DF65B76005DB51A /* 冬青黑体W3.otf in Sources */,
+				6342E8EC1DED5ABD00562F4A /* ViewControllerTwo.swift in Sources */,
+				6342E8F01DED5ACC00562F4A /* ViewControllerThree.swift in Sources */,
+				6342E8F81DED75E800562F4A /* Define.swift in Sources */,
+				6342E8E51DED555000562F4A /* tabController.swift in Sources */,
+				63F2E3191DF6B347005DB51A /* myNav.swift in Sources */,
+				6342E8D11DED537F00562F4A /* ViewController.swift in Sources */,
+				6342E8CF1DED537F00562F4A /* AppDelegate.swift in Sources */,
+				6342E8F41DED5AD900562F4A /* ViewControllerFour.swift in Sources */,
+				6342E8E81DED5AAC00562F4A /* ViewControllerOne.swift in Sources */,
+				636281891DEEBD8E000C3C70 /* TopicModel.swift in Sources */,
+				63F2E3141DF553CC005DB51A /* ChenggguaCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6342E8D21DED537F00562F4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6342E8D31DED537F00562F4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6342E8D71DED537F00562F4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6342E8D81DED537F00562F4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6342E8DB1DED537F00562F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6342E8DC1DED537F00562F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6342E8DE1DED537F00562F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474594FADDE32029E44C99AB /* Pods-ChengguaSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 53MXMBD5Y9;
+				INFOPLIST_FILE = ChengguaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenggua.ChengguaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChengguaSwift/ChengguaSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		6342E8DF1DED537F00562F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E097CE185BC3408C5350F74 /* Pods-ChengguaSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 53MXMBD5Y9;
+				INFOPLIST_FILE = ChengguaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenggua.ChengguaSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChengguaSwift/ChengguaSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6342E8C61DED537F00562F4A /* Build configuration list for PBXProject "ChengguaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6342E8DB1DED537F00562F4A /* Debug */,
+				6342E8DC1DED537F00562F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6342E8DD1DED537F00562F4A /* Build configuration list for PBXNativeTarget "ChengguaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6342E8DE1DED537F00562F4A /* Debug */,
+				6342E8DF1DED537F00562F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6342E8C31DED537F00562F4A /* Project object */;
+}

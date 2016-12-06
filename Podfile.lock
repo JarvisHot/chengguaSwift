@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.0.0)
+  - DACircularProgress (2.3.1)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.12)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SnapKit (0.40.0.beta4)
+  - SwiftDefine (0.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - MJRefresh
+  - MWPhotoBrowser
+  - SDWebImage
+  - SnapKit (from `https://github.com/SnapKit/SnapKit`, branch `feature/0.40.0`)
+  - SwiftDefine (~> 0.0.3)
+
+EXTERNAL SOURCES:
+  SnapKit:
+    :branch: feature/0.40.0
+    :git: https://github.com/SnapKit/SnapKit
+
+CHECKOUT OPTIONS:
+  SnapKit:
+    :commit: 25bd7dab9e0a2aec5c7867b1fc9135857425ad84
+    :git: https://github.com/SnapKit/SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SnapKit: 2eb32fcdca2206e611ef40d2650fe19b7469c91b
+  SwiftDefine: f74744894b4fb4f57e5668eb9355c678e417979f
+
+PODFILE CHECKSUM: c748584773b2ed021c041d8b1b6e42e69e89e60c
+
+COCOAPODS: 1.1.1

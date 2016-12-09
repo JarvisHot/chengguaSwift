@@ -102,6 +102,7 @@ class ChenggguaCell: UITableViewCell {
                     imageBtn.setImage(UIImage.init(named: "视频播放"), for: .normal)
                 }else{
                     //这里添加点击事件
+                    imageBtn.addTarget(self, action: #selector(ContentImageCLick(_:)), for: .touchUpInside)
                 }
                 imageBack.addSubview(imageBtn)
             }else{

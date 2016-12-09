@@ -11,7 +11,9 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SnapKit (0.40.0.beta4)
+  - Spring (1.0.3)
   - SwiftDefine (0.0.3)
+  - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -19,17 +21,25 @@ DEPENDENCIES:
   - MWPhotoBrowser
   - SDWebImage
   - SnapKit (from `https://github.com/SnapKit/SnapKit`, branch `feature/0.40.0`)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SwiftDefine (~> 0.0.3)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   SnapKit:
     :branch: feature/0.40.0
     :git: https://github.com/SnapKit/SnapKit
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
 
 CHECKOUT OPTIONS:
   SnapKit:
     :commit: 25bd7dab9e0a2aec5c7867b1fc9135857425ad84
     :git: https://github.com/SnapKit/SnapKit
+  Spring:
+    :commit: 3a9227c6e9157e7b47f5ac1ee5abab2a56b50002
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
@@ -39,8 +49,10 @@ SPEC CHECKSUMS:
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SnapKit: 2eb32fcdca2206e611ef40d2650fe19b7469c91b
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftDefine: f74744894b4fb4f57e5668eb9355c678e417979f
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: c748584773b2ed021c041d8b1b6e42e69e89e60c
+PODFILE CHECKSUM: 79e2c99107d4d77c7598a0d7f15903731023a1ae
 
 COCOAPODS: 1.1.1

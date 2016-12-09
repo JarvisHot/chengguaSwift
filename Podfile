@@ -9,4 +9,6 @@ pod 'MJRefresh'
 pod 'SDWebImage'
 pod 'SwiftDefine','~> 0.0.3'
 pod 'MWPhotoBrowser'
+pod 'SwiftyJSON'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 end

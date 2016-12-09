@@ -7,15 +7,31 @@
 //
 
 import UIKit
-
+import Spring
 class ViewControllerTwo: UIViewController {
 
+   
+    @IBOutlet weak var anbutton: SpringButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "bgImg1991"), for: .default)
+       
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        anbutton.animation="squeezeUp"
+        //        anbutton.y+=50
+        anbutton.animate()
+    }
 
+    
+    @IBAction func buttonClick(_ sender: SpringButton) {
+//        anbutton.y=300
+        anbutton.animation="squeezeDown"
+        anbutton.animate()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

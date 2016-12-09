@@ -13,6 +13,7 @@ class ViewControllerFour: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "bgImg1991"), for: .default)
         // Do any additional setup after loading the view.
     }
 

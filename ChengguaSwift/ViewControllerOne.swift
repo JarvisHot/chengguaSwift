@@ -12,6 +12,7 @@ import MJRefresh
 import SwiftDefine
 import SDWebImage
 import MWPhotoBrowser
+import SwiftyJSON
 class ViewControllerOne: UIViewController,UITableViewDelegate,UITableViewDataSource,ChengguaCellDelegate,MWPhotoBrowserDelegate {
     
     var num : NSNumber = 0.0
@@ -26,10 +27,11 @@ class ViewControllerOne: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "bgImg1991"), for: .default)
+       UIApplication.shared.statusBarStyle = .lightContent
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "bgImg1991"), for: .default)
         self.navigationItem.title="123"
         self.navigationController?.navigationBar.barTintColor=UIColor.white
+        self.view.backgroundColor=UIColor.init(red: 35/255, green: 35/255, blue: 52/255, alpha: 1)
         if num==0 {
            print("heheda----")
         }else{
@@ -43,7 +45,6 @@ self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: 
     }
     
     
-
     func initTable() {
     
         guaTable=UITableView.init(frame: CGRect.zero, style: .plain)
@@ -54,11 +55,13 @@ self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: 
             self.pageNum=1
             self.loadData(page: self.pageNum,refresh: true)
         })
+        guaTable.backgroundColor=UIColor.init(red: 35/255, green: 35/255, blue: 52/255, alpha: 1)
 
         guaTable.mj_footer=MJRefreshAutoNormalFooter.init(refreshingBlock: {
                        self.pageNum+=1
                         self.loadData(page: self.pageNum,refresh: false)
         })
+       
        
     
         
@@ -66,6 +69,7 @@ self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: 
 //        guaTable.rowHeight=44;
 //        guaTable.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
         guaTable.register(UINib.init(nibName: "ChenggguaCell", bundle:Bundle.main), forCellReuseIdentifier: "cell")
+        guaTable.separatorColor=UIColor.init(colorLiteralRed: 35/255, green: 35/255, blue: 35/255, alpha: 1)
         self.view.addSubview(guaTable)
         
     }
@@ -76,7 +80,7 @@ self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: 
        
         Alamofire.request( url , method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate().responseJSON { (response) in
             switch response.result{
-            case.success:
+            case.success(let value):
                 if refresh{
                     self.listArray .removeAllObjects()
                     self.CellHeights.removeAllObjects()
@@ -88,20 +92,17 @@ self.guaTable.mj_header.endRefreshing()
 //                    return
 //                }
                     print("success------\(response)")
-                    if let json:NSDictionary = response.result.value as? NSDictionary{
-                        let result=json.value(forKey: "result") as!NSDictionary
-                        let topics = result.object(forKey: "topic") as!NSArray
-                        for dic in topics{
-                            let model=TopicModel()
-                            model.setValuesForKeys(dic as! [String : Any])
-                            self.listArray.add(model)
-                            let height=self.cacluateCellHeight(model: model)
-                            self.CellHeights.add(height)
-                        }
-                        self.guaTable.reloadData()
-//                        print("-\(json)")
-
+                if let topicArr:Array<[String:Any]> = JSON(value)["result"]["topic"].arrayObject as! Array<[String : Any]>?{
+                    for dic in topicArr{
+                        let model=TopicModel()
+                        model.setValuesForKeys(dic)
+                        self.listArray.add(model)
+                        let height=self.cacluateCellHeight(model: model)
+                        self.CellHeights.add(height)
                     }
+                }
+                
+                self.guaTable.reloadData()
                 
             case.failure(let error):
                 print(" error------|\(error)--");
